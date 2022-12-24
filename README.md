@@ -22,9 +22,29 @@ Copy repository from git.
 git clone https://github.com/tarunbh009/machine_learning_project.git
 
 Upload updated code to git:
-git add .
+git add . or git add filename
+
+To create version/commit all changes by git:
 git commit -m "comment"
+
+To send version/changes to github:
 git push origin main
+
+To check remote url:
+git remote -v
+
+To ignore file or folder from git write the name of file/folder in .gitignore file.
+
+To check git status:
+git status
+
+To check all version maintained by git:
+git log
+
+
+
+
+
 
 
 
