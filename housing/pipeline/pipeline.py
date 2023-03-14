@@ -46,9 +46,13 @@ class Pipeline:
         
     def run_pipeline(self):
         try:
-            pass
+            #data ingestion
 
             data_ingestion_artifact = self.start_data_ingestion()
+
+            
+
+
         except Exception as e:
             raise HousingException(e,sys) from e
             

@@ -18,7 +18,7 @@ class HousingException(Exception):
         """
         _,_ ,exec_tb = error_detail.exc_info()
         exception_block_line_number = exec_tb.tb_frame.f_lineno
-        try_block_line_number = exec_tb.tb.lineno
+        try_block_line_number = exec_tb.tb_lineno
         file_name = exec_tb.tb_frame.f_code.co_filename
         error_message = f"""
         
@@ -36,3 +36,5 @@ class HousingException(Exception):
 
     def __repr__(self)-> str:
         return HousingException.__name__.str()
+
+
